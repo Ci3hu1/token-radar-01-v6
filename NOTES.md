@@ -103,3 +103,22 @@ recomputes live from the board it shows.
   512 KiB (see below).
 - Determinism: two runs write the same bytes (fixed seeds, no clock, no
   network).
+
+## Submission (v6 rewrite, the 5th and last slot)
+
+- Submitted 24 Nov 2026 ~13:32 WIB on Joni's "Setuju, submit Radar v6".
+- Entry commit be01b911c468d99fd5abfdf597768f2f709f9041 (main).
+- Submission 01a20c41-b56b-704a-9eb8-14fe6ee258db, stage "submitting" at submit
+  (accepted for checking; the checks had not ruled after 30 s).
+- Bundle token-radar-01-v6-rewrite.tar.gz, sha256
+  60c750b80dee87959b74a3d1b08796eb3c61d1ffc40a6a3b81203d1c63b7fc16
+  (654,760 B; builder session bc020dfc, 1 usage row).
+- Kit check ok=true, failed=[] (reproduces 1633/1933 = 84.4%, revised PASS,
+  in_window PASS, priced PASS).
+- Claim code saved ONLY to ~/.config/makefun/token-radar-01-submission.json
+  (0600).
+- Checksum gap vs v5 (stated plainly to Joni before submitting): this build's
+  checksum is 85da0ff4, v5's was 30f908cf; top-1 $152,994,608 vs v5's
+  $152,994,119 (+$489); sum of EVs $1,322,658,200 vs $1,321,528,244 (+0.085%).
+  The odds are calibrated to the aggregates, not bit-identical per row.
+- Closes 14 Dec 2026 10:00 UTC; results after.
